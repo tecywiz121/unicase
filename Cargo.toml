@@ -14,6 +14,13 @@ exclude = [
 
 build = "build.rs"
 
+[dependencies]
+serde = { version = "1", optional = true }
+
+[dev-dependencies]
+serde = "1"
+serde_test = "1"
+
 [build-dependencies]
 version_check = "0.1"
 

@@ -56,6 +56,8 @@ use self::unicode::Unicode;
 
 mod ascii;
 mod unicode;
+#[cfg(any(feature = "serde", test))]
+mod serde;
 
 /// Case Insensitive wrapper of strings.
 #[derive(Clone, Copy)]
